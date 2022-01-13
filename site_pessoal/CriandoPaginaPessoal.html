@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Página Pessoal</title>
+        <link rel="stylesheet" href="paginaPessoal.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#pagina2">ÁREAS DE INTERESSE</a></li>
+                <li><a href="#pagina3">QUER ESTUDAR COMIGO?</a></li>
+            </ul>
+        </nav>
+
+        <div id="pagina1" class="pagina1">
+            <h1>QUEM SOU EU</h1>
+            <a href="https://www.linkedin.com/in/gleison-moura-794793220/"><img src="images/gleison.png"></a>
+            <article>
+                <p>Sou um jovem professor de física que busca a maestria em sua prática docente. Meu objetivo 
+                    é que meus alunos realizem seus sonhos causando grande impacto na comunidade em que vivem 
+                    ou desejam atuar futuramente. Meu objetivo é contribuir para uma sociedade cada vez mais
+                    democrática e consciente sobre os dilemas morais que cercam a ciência e a tecnologia.<br>
+                    Por esse motivo também busco formação tecnológica que futuramente também poderá ser usada
+                    para desenvolvimento educacional. Quero me formar software Engineer ainda em 2022. Quero 
+                    trabalhar para desenvolver softwares que auxiliem na resolução de problemas existentes na 
+                    sociedade moderna; contribuindo para o desenvolvimento econômico nacional.
+                </p>
+            </article>
+        </div>
+
+        <div id="pagina2" class="pagina2">
+            <h1> ÁREAS EM QUE TRABALHO</h1>
+            <div class="grid">
+                <section>
+                    <h2>Robótica</h2>
+                    <br>
+                    <div class="tamanho">
+                        <p class="tamanho">A robótica trabalha com três áreas fundamentais, sendo elas: eletrônica, mecânica
+                            e programação. Todas essas áreas são trabalhadas em um bom curso de robótica que 
+                            vise a emancipação tecnológica do aluno. Se você quiser aprender a manipular objetos
+                            por meio da robótica, venha comigo?
+                        </p>
+                    </div>  
+                    <img src="images/litleRobot.jpg">
+                </section>
+
+                <section>
+                    <h2>Física</h2>
+                    <br>
+                    <div class="tamanho">
+                        <p class="tamanho">A física visa levar ao aluno a um outro patamar no olhar para a sociedade e para 
+                            a própria tecnologia; já que ele será capaz de analisar fenômenos de forma 
+                            extremamente aprofundada nos moldes do método científico, o que proporcionará para 
+                            este estudante uma análise mais acurada e matemática da vida existente no mundo físico. 
+                            Acredito que a física é a ciência mais avançada da atualidade e seu entendimento só pode
+                            ser alcançado por meio de empenho e real vontade de entender o real funcionamento do 
+                            universo. </p>
+                    </div>
+                    <img src="images/phisics.jpg ">
+                </section>
+
+                <section>
+                    <h2>Programação</h2>
+                    <br>
+                    <div class="tamanho">
+                        <p>A Robótica lida com a programação. No entanto, precisamos entender que a programação pode trabalhar 
+                            com diferentes objetos dependendo do objetivo que se almeja alcançar com ela. Existem muitos tipos 
+                            linguagem de programação e extensões das mesmas. Por exemplo, um Engenheiro de dados teria que lidar
+                            com mais com a linguagem Python; enquanto um Software Developer frot-end teria que lidar mais com as 
+                            linguagens CSS e HTML.
+                        </p>
+                    </div>
+                    <img src="images/program.jpg">
+                </section>
+            </div>
+        </div>
+        <div id="pagina3" class="pagina3">
+            <h1>VENHA ESTUDAR COMIGO</h1>
+                <caption>Horários Disponíveis</caption>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Horários Disponíveis</th>
+                            <th>Segunda</th>
+                            <th>Terça</th>
+                            <th>Quarta</th>
+                            <th>Quinta</th>
+                            <th>Sexta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>07:00 às 08:30</td>
+                            <td>Disponível</td>
+                            <td>---</td>
+                            <td>Disponível</td>
+                            <td>---</td>
+                            <td>---</td>
+                        </tr>
+                        <tr>
+                            <td>09:00 às 10:30</td>
+                            <td>---</td>
+                            <td>---</td>
+                            <td>Disponível</td>
+                            <td>Disponível</td>
+                            <td>Disponível</td>
+                        </tr>
+                        <tr>
+                            <td>11:00 às 12:30</td>
+                            <td>Disponível</td>
+                            <td>Disponível</td>
+                            <td>Disponível</td>
+                            <td>---</td>
+                            <td>---</td>
+                        </tr>
+                    </tbody>
+                </table>
+          
+            <form action="destino.php" method="post">
+                <label for="Nome"></label>
+                <input type="text" id="Nome" name="Nome" placeholder="Qual é o seu nome?">
+    
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Qual é o seu melhor email?">
+    
+                <label for="queEstudar"></label>
+                <input type="text" id="querEstudar" name="querEstudar" placeholder="O que quer estudar comigo?" maxlength="30">
+    
+                <label for="horario"></label>
+                <input type="text" id="horario" name="horario" placeholder="Qual é o melhor horário?">
+    
+                <input type="submit" >
+            </form>>
+        </div>
+    </body>
+</html>

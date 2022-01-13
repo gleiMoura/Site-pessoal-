@@ -1,0 +1,141 @@
+*{
+    margin:0;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 62,5%;
+}
+body{
+    font-family: sans-serif;
+    min-width: 320px;
+}
+
+nav{
+    width:100%;
+    height: 100px;
+    background-color: rgba(61, 6, 61, 0.767);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    margin:0;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 70px;
+    font-size: 1.5em;
+}
+.pagina1{
+    background-color: #c71376;
+    height: 100vh;
+    padding-top: 30px;
+}
+.pagina2{
+    background-image:url(images/purpleGalaxy.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;/* Resize the background image to cover the entire container */
+    height: 100vh;
+    padding-top: 30px;
+}
+.pagina3{
+    background-color: #c71376;
+    padding-top: 30px;
+}
+h1{
+    text-align: center;
+    margin-bottom:35px;
+    color: white;
+}
+p{
+    font-size: 1,6rem;
+}
+.pagina1 img{
+    width:25%;
+    margin: 40px 20px 0px 140px; 
+    float: left;
+    border-radius: 50%;
+
+}
+article{
+    background-color: rgba(168, 10, 168, 0.984);
+    width:45%;
+    height: 330px;
+    float: right;
+    padding:20px;
+    margin-top:40px;
+    margin-right:60px;
+    font-size: 1.3em;
+    color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.438);
+    overflow-y:auto;
+    text-align: justify;
+}
+section{
+    background-color:black;
+    width: 30%;
+    height: 370px;
+    float:left;
+    Margin:0 15px;
+    padding:10px;
+}
+section p, section h2{
+    color: white;
+    text-align: center;
+}
+.tamanho{
+    width:100%;
+    height:85%;
+}
+section img{
+    border-radius: 50%;
+    width:30%;
+    display:block; /*I find this way to put the image in the center; in a horizontal form, but the problem
+                    now is put all images in the same places*/
+    margin: auto;
+    border: 2px solid rgba(168, 10, 168, 0.984); 
+}
+.grid{
+    display: flex;
+    justify-content: center;
+}
+@media(max-width:890px){
+    .pagina1{
+        height:inherit;
+  
+    }
+    .pagina2{
+        background-image: none;
+        background-color: #c71376;
+    }
+    .pagina3{
+        background-color: #c71376;
+
+    }
+    article{
+        width:90%;
+        height:240px;
+        float:none;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .pagina1 img{
+        width:20%;
+        float:none;
+        margin:auto;
+        margin-left:40%;
+    }
+    section{
+        width:90%;
+        float:auto;
+        margin-bottom: 200px;
+    }
+
+    .grid{
+        display: block;
+    }
+}
