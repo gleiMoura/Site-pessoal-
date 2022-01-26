@@ -7,10 +7,8 @@
     </head>
     <body>
         <nav>
-            <ul>
-                <li><a href="#pagina2">ÁREAS DE INTERESSE</a></li>
-                <li><a href="#pagina3">QUER ESTUDAR COMIGO?</a></li>
-            </ul>
+            <h3><a href="#pagina2">INTERESSES</a></h3>
+            <h3><a href="#pagina3">ESTUDE COMIGO?</a></h3>
         </nav>
 
         <div id="pagina1" class="pagina1">
@@ -42,7 +40,7 @@
                             por meio da robótica, venha comigo?
                         </p>
                     </div>  
-                    <img src="images/litleRobot.jpg">
+                    <a href="https://www.portaldaindustria.com.br/industria-de-a-z/robotica/"><img src="images/litleRobot.jpg" alt="O que é Robótica?"></a>
                 </section>
 
                 <section>
@@ -57,7 +55,7 @@
                             ser alcançado por meio de empenho e real vontade de entender o real funcionamento do 
                             universo. </p>
                     </div>
-                    <img src="images/phisics.jpg ">
+                    <a href="http://www.fnde.gov.br/component/k2/item/4082-f%C3%ADsica#:~:text=F%C3%ADsica%20(do%20grego%20antigo%3A%20%CF%86%CF%8D%CF%83%CE%B9%CF%82,em%20seus%20aspectos%20mais%20gerais.&text=%C3%89%20considerada%20a%20ci%C3%AAncia%20fundamental,biologia%2C%20t%C3%AAm%20ra%C3%ADzes%20na%20f%C3%ADsica."><img src="images/phisics.jpg " alt="O que é Física?"></a>
                 </section>
 
                 <section>
@@ -71,14 +69,15 @@
                             linguagens CSS e HTML.
                         </p>
                     </div>
-                    <img src="images/program.jpg">
+                    <a href="https://idocode.com.br/blog/programacao/o-que-e-programacao/"><img src="images/program.jpg" alt="O que é Programação?"></a>
                 </section>
             </div>
         </div>
         <div id="pagina3" class="pagina3">
             <h1>VENHA ESTUDAR COMIGO</h1>
-                <caption>Horários Disponíveis</caption>
+                <div class="table">
                 <table>
+                    <caption>Horários Disponíveis</caption>
                     <thead>
                         <tr>
                             <th>Horários Disponíveis</th>
@@ -116,8 +115,12 @@
                         </tr>
                     </tbody>
                 </table>
+                </div>
           
             <form action="destino.php" method="post">
+
+                <h1>Entre em contato</h1>
+
                 <label for="Nome"></label>
                 <input type="text" id="Nome" name="Nome" placeholder="Qual é o seu nome?">
     
@@ -130,8 +133,13 @@
                 <label for="horario"></label>
                 <input type="text" id="horario" name="horario" placeholder="Qual é o melhor horário?">
     
-                <input type="submit" >
+                <input class="botao" type="submit" >
             </form>>
         </div>
+        <footer>
+            <div class="foot">
+                <p>Feito com amor S2 por Gleison Moura</p>
+            </div>
+        </footer>
     </body>
 </html>
