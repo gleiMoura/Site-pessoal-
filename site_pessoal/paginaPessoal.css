@@ -15,8 +15,10 @@ nav{
     height: 100px;
     background-color: rgba(61, 6, 61, 0.767);
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content:space-around;
 }
 nav ul{
     list-style-type: none;
@@ -50,6 +52,10 @@ h1{
     text-align: center;
     margin-bottom:35px;
     color: white;
+}
+h3 a{
+    color:rgba(2, 2, 7, 0.515);
+    text-shadow: 2px 2px rgb(85, 17, 85);
 }
 p{
     font-size: 1,6rem;
@@ -103,10 +109,70 @@ section img{
     display: flex;
     justify-content: center;
 }
+table{
+    border-collapse: collapse;
+    width:50%;
+    margin:auto;
+    margin-top:30px;
+    background-color:blueviolet;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.685);
+    overflow-x:auto;
+}
+.responsive-table{
+    max-width:100%;
+    overflow-x:auto;
+}
+table td, table th{
+    border: 2px solid black;
+    padding: 4px;
+    text-align: center;
+}
+caption{
+    text-align: center;
+}
+form{
+    width:50%;
+    height: 300px;
+    margin-top:40px;
+    margin-bottom:40px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+}
+input{
+    margin:auto;
+    width:80%;
+    margin-bottom:10px;
+    background-color: rgb(148, 87, 148);
+}
+::-webkit-input-placeholder{
+    color:rgba(0, 0, 0, 0.707);
+}
+input:focus{
+    box-shadow: 0 0 5px black;
+    outline: none;
+    border: 1px solid black
+}
+.botao{
+    width:50%;
+}
+footer{
+    height: 50px;
+    background-color: black;
+}
+.foot{
+    width:300px;
+    color:white;
+    margin-left:38.88%;
+    padding-top:16px;
+}
+section a{
+    
+}
+ 
 @media(max-width:890px){
     .pagina1{
         height:inherit;
-  
     }
     .pagina2{
         background-image: none;
@@ -138,4 +204,6 @@ section img{
     .grid{
         display: block;
     }
+
 }
+
